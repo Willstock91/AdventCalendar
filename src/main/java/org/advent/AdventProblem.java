@@ -16,8 +16,9 @@ public class AdventProblem {
     }
 
     public String execute() {
+        long startTime = System.currentTimeMillis();
         if(logic != null) {
-            return "[Problem " + problemKey + " Result: " + logic.apply(this.inputFile) + "]";
+            return "[Problem " + problemKey + " Result: " + logic.apply(this.inputFile) + ", Execution Time: " + (System.currentTimeMillis() - startTime) + "ms]";
         }
         return "[Problem " + problemKey + " Result: undefined]";
     }
