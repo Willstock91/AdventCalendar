@@ -13,9 +13,9 @@ public class Main {
     public static void main(String[] args) {
         AdventCalendar calendar = new AdventCalendar();
         //Execute Entire Calendar
-        calendar.execute();
+        //calendar.execute();
 
         //Execute a Specific Day
-        //calendar.getDay(1).execute();
+        calendar.getDay(1).execute();
     }
 }
