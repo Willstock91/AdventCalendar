@@ -10,7 +10,7 @@ public class AdventProblem {
 
     public AdventProblem(Integer day, Integer problemNumber) {
         this.problemKey = day + "." + problemNumber;
-        this.inputFile = new File("src/main/resources/" + problemKey + ".txt");
+        this.inputFile = new File("src/main/resources/" + day + ".txt");
         this.logic = AdventFunctionLogic.getProblemLogic(problemKey);
     }
 
